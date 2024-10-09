@@ -4,6 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/User/AndroidStudioProjects/BottomNavApp/app/src/main/res/layout/activity_main.xml" value="0.15" />
+        <entry key="..\:/andu/ASProjects/BottomNavApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/andu/ASProjects/BottomNavApp/app/src/main/res/layout/fragment_dashboard.xml" value="0.3392210144927536" />
+        <entry key="..\:/andu/ASProjects/BottomNavApp/app/src/main/res/layout/fragment_detail.xml" value="0.3392210144927536" />
+        <entry key="..\:/andu/ASProjects/BottomNavApp/app/src/main/res/layout/fragment_home.xml" value="0.3392210144927536" />
+        <entry key="..\:/andu/ASProjects/BottomNavApp/app/src/main/res/layout/fragment_notifications.xml" value="0.3392210144927536" />
+        <entry key="..\:/andu/ASProjects/BottomNavApp/app/src/main/res/layout/fragment_user_list.xml" value="0.1" />
+        <entry key="..\:/andu/ASProjects/BottomNavApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3453125" />
       </map>
     </option>
   </component>

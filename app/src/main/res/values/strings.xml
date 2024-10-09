@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">BottomNavApp</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="app_name">Transaction Dictionary</string>
+    <string name="title_home">Transactions</string>
+    <string name="description_home">Transaction Description - check now</string>
+    <string name="title_dashboard">Income</string>
+    <string name="header_dashboard">Choose Income Transaction</string>
+    <string name="title_notifications">Outcome</string>
 </resources>
