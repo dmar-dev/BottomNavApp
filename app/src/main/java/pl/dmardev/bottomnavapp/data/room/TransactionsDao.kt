@@ -9,10 +9,10 @@ import pl.dmardev.bottomnavapp.data.models.Transaction
 interface TransactionsDao {
 
     @Insert
-    suspend fun insertTransactions(transaction : Transaction)
+    suspend fun insertTransaction(transaction : Transaction)
 
     @Update
-    suspend fun updateTransactions(transaction: Transaction)
+    suspend fun updateTransaction(transaction: Transaction)
 
     @Delete
     suspend fun deleteTransactions(transactions: List<Transaction>)
