@@ -9,13 +9,13 @@ import pl.dmardev.bottomnavapp.data.models.Transaction
 interface TransactionsDao {
 
     @Insert
-    fun insertTransactions(transaction : Transaction)
+    suspend fun insertTransactions(transaction : Transaction)
 
     @Update
-    fun updateTransactions(transaction: Transaction)
+    suspend fun updateTransactions(transaction: Transaction)
 
     @Delete
-    fun deleteTransactions(transactions: List<Transaction>)
+    suspend fun deleteTransactions(transactions: List<Transaction>)
 
     @Query("SELECT * FROM transactions_table ORDER BY date DESC")
     fun getAllTransactions(): Flow<List<Transaction>>
