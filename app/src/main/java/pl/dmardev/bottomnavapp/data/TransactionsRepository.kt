@@ -4,7 +4,7 @@ import android.app.Application
 import pl.dmardev.bottomnavapp.data.models.Transaction
 import pl.dmardev.bottomnavapp.data.room.DatabaseInstance
 
-// context: Context is possible (what You want)
+// context: Context is also possible (what You want)
 class TransactionsRepository(app: Application) {
 
     private val transactionsDao = DatabaseInstance.getInstance(app).transactionsDao()
