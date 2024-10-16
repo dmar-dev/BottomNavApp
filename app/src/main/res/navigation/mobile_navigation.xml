@@ -3,23 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/nav_transactions">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="pl.dmardev.bottomnavapp.ui.home.HomeFragment"
+        android:id="@+id/nav_transactions"
+        android:name="pl.dmardev.bottomnavapp.ui.transactions_fragment.TransactionsFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_transactions" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="pl.dmardev.bottomnavapp.ui.dashboard.UserListFragment"
+        android:id="@+id/nav_income"
+        android:name="pl.dmardev.bottomnavapp.ui.income_fragment.IncomeFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_user_list" />
+        tools:layout="@layout/fragment_income" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="pl.dmardev.bottomnavapp.ui.notifications.NotificationsFragment"
+        android:id="@+id/nav_outcome"
+        android:name="pl.dmardev.bottomnavapp.ui.outcome_fragment.OutcomeFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_outcome" />
 </navigation>

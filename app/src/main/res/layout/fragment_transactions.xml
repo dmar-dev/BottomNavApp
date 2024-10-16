@@ -4,28 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    tools:context=".ui.transactions_fragment.TransactionsFragment">
 
     <!-- content is provide from ViewModel class -->
     <TextView
-        android:id="@+id/startText"
+        android:id="@+id/start_text"
+        tools:text="Sample text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:textSize="50sp"
+        android:textSize="20sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent" />
-
-    <TextView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/description_home"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="@id/startText"
-        app:layout_constraintStart_toStartOf="@id/startText"
-        app:layout_constraintTop_toBottomOf="@+id/startText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

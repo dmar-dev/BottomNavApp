@@ -7,8 +7,12 @@
         <entry key="..\:/andu/ASProjects/BottomNavApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/andu/ASProjects/BottomNavApp/app/src/main/res/layout/fragment_dashboard.xml" value="0.3392210144927536" />
         <entry key="..\:/andu/ASProjects/BottomNavApp/app/src/main/res/layout/fragment_detail.xml" value="0.3392210144927536" />
+        <entry key="..\:/andu/ASProjects/BottomNavApp/app/src/main/res/layout/fragment_edit_transaction.xml" value="0.3453125" />
         <entry key="..\:/andu/ASProjects/BottomNavApp/app/src/main/res/layout/fragment_home.xml" value="0.3392210144927536" />
+        <entry key="..\:/andu/ASProjects/BottomNavApp/app/src/main/res/layout/fragment_income.xml" value="0.30520833333333336" />
         <entry key="..\:/andu/ASProjects/BottomNavApp/app/src/main/res/layout/fragment_notifications.xml" value="0.3392210144927536" />
+        <entry key="..\:/andu/ASProjects/BottomNavApp/app/src/main/res/layout/fragment_outcome.xml" value="0.3453125" />
+        <entry key="..\:/andu/ASProjects/BottomNavApp/app/src/main/res/layout/fragment_transactions.xml" value="0.3453125" />
         <entry key="..\:/andu/ASProjects/BottomNavApp/app/src/main/res/layout/fragment_user_list.xml" value="0.1" />
         <entry key="..\:/andu/ASProjects/BottomNavApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3453125" />
       </map>

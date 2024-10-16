@@ -1,13 +1,13 @@
-package pl.dmardev.bottomnavapp.ui.dashboard
+package pl.dmardev.bottomnavapp.ui.transactions_fragment
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class DashboardViewModel : ViewModel() {
+class TransactionsViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is Income Fragment"
+        value = "Transactions App"
     }
     val text: LiveData<String> = _text
 }

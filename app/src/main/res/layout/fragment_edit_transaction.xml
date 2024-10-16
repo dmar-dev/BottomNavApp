@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.dashboard.UserListFragment">
+    tools:context=".ui.edit_fragment.EditTransactionFragment">
 
     <TextView
         android:id="@+id/choose_lbl"
         android:layout_marginTop="25dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/header_dashboard"
+        android:text="Edit Transaction"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="italic"
@@ -24,4 +24,4 @@
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />-->
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
