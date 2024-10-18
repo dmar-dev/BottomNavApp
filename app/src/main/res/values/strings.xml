@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Transaction Dictionary</string>
+    <string name="app_name">Transaction\nDictionary</string>
     <string name="title_home">Transactions</string>
     <string name="description_home">Transaction Description - check now</string>
     <string name="title_dashboard">Income</string>

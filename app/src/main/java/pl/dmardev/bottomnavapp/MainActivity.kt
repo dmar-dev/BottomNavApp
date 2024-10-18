@@ -1,14 +1,22 @@
+/*
+ * Author Rafał Rejek strefakursow.pl
+ */
 package pl.dmardev.bottomnavapp
 
 import android.os.Bundle
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
+import pl.dmardev.bottomnavapp.data.models.Transaction
+import pl.dmardev.bottomnavapp.data.models.TransactionCategory
+import pl.dmardev.bottomnavapp.data.models.TransactionType
 import pl.dmardev.bottomnavapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+    private val mainVm by viewModels<MainViewModel>()
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
 
@@ -17,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        /*
+/*
         val navView: BottomNavigationView = binding.navView
 
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
@@ -28,11 +36,15 @@ class MainActivity : AppCompatActivity() {
 
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
-        */
-
+*/
         val navHostFragment = supportFragmentManager
             .findFragmentById(binding.navHostFragmentActivityMain.id) as NavHostFragment
         navController = navHostFragment.navController
         NavigationUI.setupWithNavController(binding.navView, navController)
+
+        mainVm.insertTransaction(createTransaction())
     }
+
+    private fun createTransaction() =
+        Transaction(0, 1L, 10f, "Description", TransactionType.INCOME, TransactionCategory.OTHERS)
 }

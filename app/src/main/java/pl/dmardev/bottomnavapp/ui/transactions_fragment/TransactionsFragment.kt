@@ -1,52 +1,51 @@
+/*
+ * Author Rafał Rejek strefakursow.pl
+ */
 package pl.dmardev.bottomnavapp.ui.transactions_fragment
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import pl.dmardev.bottomnavapp.MainViewModel
 import pl.dmardev.bottomnavapp.databinding.FragmentTransactionsBinding
+import pl.dmardev.bottomnavapp.ui.adapters.TransactionsAdapter
 
 class TransactionsFragment : Fragment() {
 
+    private val viewModel by viewModels<TransactionsViewModel>()
+    private val mainVm by activityViewModels<MainViewModel>()
     private var _binding: FragmentTransactionsBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
 
-    private val viewModel by viewModels<TransactionsViewModel>()
-
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-//        return inflater.inflate(R.layout.fragment_transactions, container, false)
-
-        val transactionsViewModel =
-                ViewModelProvider(this).get(TransactionsViewModel::class.java)
-
         _binding = FragmentTransactionsBinding.inflate(inflater, container, false)
-        val root: View = binding.root
-        val textView: TextView = binding.startText
-
-        transactionsViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
-        return root
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        /*val textView: TextView = binding.startText
-        viewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }*/
+        binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
+        mainVm.getAllTransactions().observe(viewLifecycleOwner) { transactions ->
+            binding.recyclerView.adapter = TransactionsAdapter(
+                transactions,
+                { transaction, position ->
+                Log.d("TEST", "Jest trans: ${transaction.toString()}")
+            })
+        }
     }
 
     override fun onDestroyView() {
