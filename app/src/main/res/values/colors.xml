@@ -7,4 +7,18 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- PieChart library -->
+    <array name="pie_chart_1">
+        <item>#9038FF</item>
+        <item>#45197D</item>
+        <item>#E536AB</item>
+        <item>#5C03BC</item>
+    </array>
+    <array name="pie_chart_2">
+        <item>#00796B</item>
+        <item>#388E3C</item>
+        <item>#689F38</item>
+        <item>#AFB42B</item>
+    </array>
 </resources>

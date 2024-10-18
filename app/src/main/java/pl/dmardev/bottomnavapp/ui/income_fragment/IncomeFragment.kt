@@ -3,6 +3,8 @@
  */
 package pl.dmardev.bottomnavapp.ui.income_fragment
 
+import android.annotation.SuppressLint
+import android.content.res.TypedArray
 import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -20,6 +22,7 @@ import com.github.mikephil.charting.formatter.PercentFormatter
 import com.github.mikephil.charting.highlight.Highlight
 import com.github.mikephil.charting.listener.OnChartValueSelectedListener
 import pl.dmardev.bottomnavapp.MainViewModel
+import pl.dmardev.bottomnavapp.R
 import pl.dmardev.bottomnavapp.databinding.FragmentIncomeBinding
 
 class IncomeFragment : Fragment() {
@@ -40,6 +43,7 @@ class IncomeFragment : Fragment() {
         return binding.root
     }
 
+    @SuppressLint("Recycle", "ResourceType")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -82,11 +86,12 @@ class IncomeFragment : Fragment() {
             // 2. look of chart
             val pieDataSet = PieDataSet(entries, "")
             // four colors because four values in data/models/TransactionCategory
+            val chartColors: TypedArray = resources.obtainTypedArray(R.array.pie_chart_2)
             val colors= listOf(
-                Color.parseColor("#9038FF"),
-                Color.parseColor("#45197D"),
-                Color.parseColor("#E536AB"),
-                Color.parseColor("#5C03BC")
+                chartColors.getColor(0, 0),
+                chartColors.getColor(1, 0),
+                chartColors.getColor(2, 0),
+                chartColors.getColor(3, 0)
             )
             pieDataSet.colors = colors
 

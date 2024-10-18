@@ -46,5 +46,5 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun createTransaction() =
-        Transaction(0, 1L, 10f, "Description", TransactionType.INCOME, TransactionCategory.OTHERS)
+        Transaction(0, 1L, 15f, "Description", TransactionType.INCOME, TransactionCategory.FOOD)
 }
