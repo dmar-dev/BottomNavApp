@@ -10,4 +10,6 @@ class AddTransactionViewModel : ViewModel() {
         value = "This is Add Transaction Fragment"
     }
     val text: LiveData<String> = _text
+
+    var date = -1L // You can see it if something wrong
 }

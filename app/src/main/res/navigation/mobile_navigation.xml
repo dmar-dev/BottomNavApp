@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_transactions">
+    app:startDestination="@id/addTransactionFragment">
 
     <fragment
         android:id="@+id/nav_transactions"
@@ -22,4 +22,9 @@
         android:name="pl.dmardev.bottomnavapp.ui.outcome_fragment.OutcomeFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_outcome" />
+    <fragment
+        android:id="@+id/addTransactionFragment"
+        android:name="pl.dmardev.bottomnavapp.ui.add_fragment.AddTransactionFragment"
+        android:label="fragment_add_transaction"
+        tools:layout="@layout/fragment_add_transaction" />
 </navigation>
